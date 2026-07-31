@@ -4,18 +4,18 @@ public:
         int cnt = 0;
         int max = 0;
 
-        for (int i = 0; i < nums.size(); i++) {
-            if (nums[i] == 1) {
+        for(int i=0; i<nums.size(); i++){
+            if(nums[i] == 1){
                 cnt++;
+                         
+             if(cnt > max)
+                max = cnt;
+             }
 
-                if (cnt > max)
-                    max = cnt;
-            }
-            else {
+             else{
                 cnt = 0;
-            }
+             }
         }
-
-        return max;
+       return max;
     }
 };
